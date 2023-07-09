@@ -17,12 +17,12 @@
                         </div>
                         <div class="order-2">
                             <div>
-                                <button style="background-color: #3490dc; color: white; border-radius: 0.25rem; padding: 0.5rem 1rem; margin-right: 0.5rem; transition: background-color 0.2s ease-in-out;"
+                                <button style="background-color: #3490dc; color: white; border-radius: 0.25rem; padding: 0.75rem 1.5rem; margin-right: 0.5rem; transition: background-color 0.2s ease-in-out;"
                                         onmouseover="this.style.backgroundColor='#2779bd'"
                                         onmouseout="this.style.backgroundColor='#3490dc'">
                                     Create Folder
                                 </button>
-                                <button style="background-color: #38c172; color: white; border-radius: 0.25rem; padding: 0.5rem 1rem; margin-right: 0.5rem; transition: background-color 0.2s ease-in-out;"
+                                <button style="background-color: #38c172; color: white; border-radius: 0.25rem; padding: 0.75rem 1.5rem; margin-right: 0.5rem; transition: background-color 0.2s ease-in-out;"
                                         onmouseover="this.style.backgroundColor='#2d995b'"
                                         onmouseout="this.style.backgroundColor='#38c172'">
                                     Upload Files
@@ -35,7 +35,7 @@
                         {{-- breadcrumbs --}}
                         <div class="py-2 px-3">
                             <div class="flex items-center">
-                                <a href="" class="font-bold text-gray-400">Path</a>
+                                <a href="" class="font-bold text-gray-400">File Path</a>
 
                                 <svg class="text-gray-300 w-5 h-5 mx-1" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
@@ -56,7 +56,6 @@
                                     <th class="p-2 w-2/12"></th>
                                 </tr>
                                 </thead>
-
                                 <tbody>
                                 <tr class="border-gray-100 border-b-2 hover:bg-gray-100">
                                     <td class="py-2 px-3 flex items-center">
@@ -82,16 +81,21 @@
                                     <td class="py-2 px-3">
                                         <div class="flex justify-end items-center">
                                             <ul class="flex items-center">
-                                                <li class="mr-4">
-                                                    <button class="text-gray-400 font-bold hover:text-gray-600">
+                                            <li class="mr-4">
+                                                    <button style="color: #6b7280; font-weight: bold; transition: color 0.2s ease-in-out; margin-right: 1rem;"
+                                                            onmouseover="this.style.color='#4b5563'"
+                                                            onmouseout="this.style.color='#6b7280'">
                                                         Rename
                                                     </button>
                                                 </li>
                                                 <li>
-                                                    <button class="text-red-400 font-bold hover:text-red-600">
+                                                    <button style="color: #ef4444; font-weight: bold; transition: color 0.2s ease-in-out;"
+                                                            onmouseover="this.style.color='#dc2626'"
+                                                            onmouseout="this.style.color='#ef4444'">
                                                         Delete
                                                     </button>
                                                 </li>
+
                                             </ul>
                                         </div>
                                     </td>
