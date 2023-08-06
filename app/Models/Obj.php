@@ -24,6 +24,10 @@ class Obj extends Model
         });
     }
 
+    public function scopeForCurrentTeam($query){
+        $query->where('team_id',auth()->user()->currentTeam->id);
+    }
+
     public function objectable()
     {
         return $this->morphTo(); 
